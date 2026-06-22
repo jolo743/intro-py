@@ -42,6 +42,7 @@ Imprime por consola el siguiente mensaje usando separación por comas para unir 
 "Ella se llama [teammate] y yo me llamo [name]"
 """
 # Escribe tu código aquí
+print("El se llama", teammate, "y yo me llamo", name)
 
 """
 --- Ejercicio 5 separación con operador % ---
@@ -49,12 +50,16 @@ Imprime por consola el siguiente mensaje usando separación con el operador % pa
 "Además de programar, nos gusta [hobbie] y [teammate-hobbie]"
 """
 # Escribe tu código aquí
+print("Además de programar, nos gusta %s y %s" % (hobbie, teammate_hobbie))
 
 """
 --- Ejercicio 6 input data ---
 Escribe dos variables que reciban por terminal un número cada una
 """
 # Escribe tu código aquí
+num1 = input("Escriu un número: ")
+
+num2 = input("Escriu un altre número: ")
 
 """
 --- Ejercicio 7 ---
@@ -62,7 +67,11 @@ Imprime por consola el resultado de la suma de los dos número obtenidos anterio
 en un comentario de línea escribe lo que sucede. ¡Recuerda que puedes usar type() para indagar mas!
 """
 # Escribe tu código aquí
+print(num1 + num2)
+
 # Escribe tu análisis aquí
+# He creado las variables num1 y num2 para que reciban un número int, y con un input para pedir a quien ejecute el archivo un número.
+# Luego al imprimir hago que se sumen estos dos números.
 
 """
 --- Ejercicio 6 conversión de strings ---
@@ -70,3 +79,7 @@ Transforma los valores recibidos en el ejercicio 6 a números
 Imprime por consola el resultado de la suma de los dos número obtenidos anteriormente
 """
 # Escribe tu código aquí
+num1_int = int(num1)
+num2_int = int(num2)
+
+print(num1_int + num2_int)
