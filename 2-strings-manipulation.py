@@ -15,7 +15,10 @@ Crea una variable llamada "teammate-hobbie".
 Asígnale como valor una string con unos de sus hobbies". 
 """
 # Escribe tu código aquí
-
+hobbie = "musica"
+name = "Jordi"
+teammate = "Jean"
+teammate_hobbie = "paddel"
 
 """
 --- Ejercicio 2 Concatenación ---
@@ -23,6 +26,7 @@ Imprime por consola el siguiente mensaje concatenando las variales anteriormente
 "Soy [name] y en mis tiempos libres me gusta [hobbie]"
 """
 # Escribe tu código aquí
+print("Soy " + name + " y en mis tiempos libres me gusta escuchar " + hobbie)
 
 """
 --- Ejercicio 3 f-strings ---
@@ -30,6 +34,7 @@ Imprime por consola el siguiente mensaje usando f-strings para unir las frases d
 "Ella es [teammate] y en sus tiempos libres le gusta [teammate-hobbie]"
 """
 # Escribe tu código aquí
+print(f'El es {teammate} y en sus tiempos libres le gusta jugar a {teammate_hobbie}')
 
 """
 --- Ejercicio 4 separación por comas ---
