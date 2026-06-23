@@ -16,16 +16,26 @@ Imprime por consola el valor almacenado
 Despues haz los pasos pedidos
 """
 # Escribe tu código aquí
+mascotas= ["perro", "gato", "loro"]
+print(mascotas)
 
 # Escribe el código para saber la cantidad de elementos que tiene la lista, imprimir por consola
+print(len(mascotas))
 
 # Escribe el código para acceder al valor de la posición 2, imprimir por consola
+print(mascotas[1])
 
 # Escribe el código para agregar una elemento a la lista, imprimir por consola la lista
+mascotas.append("paloma")
+print(mascotas)
 
 # Escribe el código para modificar un elemento de la lista, imprimir por consola la lista
+mascotas[1]= "periquito"
+print(mascotas)
 
 # Escribe el código para eliminar un elemento de la lista, imprimir por consola la lista
+mascotas.remove("paloma")
+print(mascotas)
 
 
 """
@@ -42,16 +52,21 @@ Imprime por consola el valor almacenado
 Despues haz los pasos pedidos
 """
 # Escribe tu código aquí
+plantas= ('cactus', 'orquidea', 'rosas')
+print(plantas)
 
 # Escribe el código para saber la cantidad de elementos que tiene la tupla, imprimir por consola
+print(len(plantas))
 
 # Escribe el código para acceder al valor de la posición 2, imprimir por consola
+print(plantas[1])
 
 # Intentar modificar una tupla
 # plantas[1] = 'hoja rota'  # Descomenta esta línea para ver qué sucede
 
 # Escribe tu análisís acá acerca de qué sucede
-
+# Al ejecutar el archivo cuando llega a la línia 65 me da error diciendome que "'tuple' object does not support item assignment".
+# De manera que no puedo modificar la tupla
 
 """
  --- SETS ---
@@ -67,12 +82,18 @@ Imprime por la terminal dicha variable
 Haz los pasos pedidos
 """
 # Escribe el código aqui
+nombres= {'María', 'Cris', 'Cris', 'Alex'}
+print(nombres)
 
 # Explica qué sucede cuándo imprimes el valor que almacena "nombres"
+# Al imprimir 'nombres' y ejecutarlo me da esto: "{'María', 'Alex', 'Cris'}"
 
 # Escribe el código para saber la cantidad de elementos que tiene el set, imprimir por consola
+print(len(nombres))
 
 # Escribe el código para acceder al valor de la posición 3, imprimir por consola
+print(nombres[2])
+
 
 # Escribe el código para agregar una elemento al set, imprimir por consola el set
 
