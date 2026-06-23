@@ -86,18 +86,26 @@ nombres= {'María', 'Cris', 'Cris', 'Alex'}
 print(nombres)
 
 # Explica qué sucede cuándo imprimes el valor que almacena "nombres"
-# Al imprimir 'nombres' y ejecutarlo me da esto: "{'María', 'Alex', 'Cris'}"
+# Al imprimir "nombres" no me salen los repetidos, solo me da esto: "{'María', 'Alex', 'Cris'}"
 
 # Escribe el código para saber la cantidad de elementos que tiene el set, imprimir por consola
 print(len(nombres))
 
 # Escribe el código para acceder al valor de la posición 3, imprimir por consola
+nombres= list(nombres)
 print(nombres[2])
+nombres= set(nombres)
+# Para poder ver la posición 3 del set "nombres" no puedo sin antes convertirlo en una lista.
+# Y me aparece cris en vez de alex porque los set no tienen orden.
 
 
 # Escribe el código para agregar una elemento al set, imprimir por consola el set
+nombres.add("Marta")
+print(nombres)
 
 # Escribe el código para eliminar un elemento del set, imprimir por consola el set
+nombres.remove("Cris")
+print(nombres)
 
 """
  --- DICCIONARIOS ---
@@ -112,9 +120,20 @@ Crea un diccionario llamado "ciudad" con las claves 'nombre' y 'pais' y los valo
 Imprime el diccionario 
 """
 # Escribe el código aqui para acceder y ver por consola el valor de 'nombre'
+ciudad= {
+    "nombre": "Barcelona",
+    "pais": "España"
+}
+print(ciudad)
 
 # Escribe el código aqui para añadir un nuevo par clave-valor y ver por consola el valor de 'ciudad'
+ciudad["año"] = 2026
+print(ciudad)
 
 # Escribe el código aqui para modificar el valor de un par clave-valor de 'ciudad' y verlo por consola
+ciudad["nombre"] = "Badalona"
+print(ciudad)
 
 # Escribe el código aqui para eliminar un par clave-valor de 'ciudad' y verlo por consola
+del ciudad["nombre"]
+print(ciudad)
